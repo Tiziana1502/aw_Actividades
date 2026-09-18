@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Traductora</title>
+    <link rel="stylesheet" href="./estilos/index.css">
 </head>
 <body>
-    <header>
+    <header class="encabezado-principal">
         <a href="./index.html" aria-label="Ir al inicio">
-            <img src="./recursos/imagenes/mariana_sosa_logo.png" alt="logo Mariana Sosa"  width="300">       
+            <img src="./recursos/imagenes/mariana_sosa_logo.png" alt="logo Mariana Sosa"  width="400">       
         </a>
-        <nav>
+        <nav class="vinculos">
             <a href="./index.html">
                 Quién soy
             </a>              
             <a href="./contacto.html">
                 Contacto
-            </a>     
+            </a>   
+        </nav>  
     </header>
-    <main>
+    <main class="contenido-principal">
         <h1>
             ¿Necesitás una traducción o intérprete para tu próximo proyecto?           
         </h1>
@@ -26,48 +28,53 @@
             Completá el siguiente formulario contándome los detalles 
             y me pondré en contacto a la brevedad para enviarte un presupuesto sin compromiso.
         </p>
-        <form action="./contacto.html" method="post">
+        <div class="contenedor-form">
+        
+            <form action="./contacto.html" method="post">
             
-            <label for="id-nombre">Nombre Completo</label>
-            <input type="text" name="nombre" id="id-nombre">
+                <label for="id-nombre">Nombre Completo</label>
+                <input type="text" name="nombre" id="id-nombre">
 
-            <label for="id-correo">Correo electrónico</label>
-            <input type="email" name="correo" id="id-correo">
+                <label for="id-correo">Correo electrónico</label>
+                <input type="email" name="correo" id="id-correo">
 
-            <label for="id-tel">Teléfono</label>
-            <input type="tel" name="telefono" id="id-tel">
-            
-            <label for="id-serv">Tipo de Servicio</label>
-            <select name="servicio" id="id-serv">
-                <option value="TP">Traducción Publica</option>
-                <option value="TC/T">Traducción comercial/técnica</option>
-                <option value="I">interpretación</option>
-                <option value="O">Otros</option>
-            </select>
+                <label for="id-tel">Teléfono</label>
+                <input type="tel" name="telefono" id="id-tel">
+                
+                <label for="id-serv">Tipo de Servicio</label>
+                <select name="servicio" id="id-serv">
+                    <option value="TP">Traducción Publica</option>
+                    <option value="TC/T">Traducción comercial/técnica</option>
+                    <option value="I">interpretación</option>
+                    <option value="O">Otros</option>
+                </select>
 
-            <label for="id-idioma">Idioma de origen y destino</label>
-            <input type="text" name="idioma" id="id-ioioma">
+                <label for="id-idioma">Idioma de origen y destino</label>
+                <input type="text" name="idioma" id="id-ioioma">
 
-            <label for="id-urgencia">Urgencia del pedido</label>
-            <select name="urgencia" id="id-urgencia">
-                <option value="NO-URG">No urgente</option>
-                <option value="SEM">Dentro de la semana</option>
-                <option value="URG">Urgente (24-48hs)</option>              
-            </select>
+                <label for="id-urgencia">Urgencia del pedido</label>
+                <select name="urgencia" id="id-urgencia">
+                    <option value="NO-URG">No urgente</option>
+                    <option value="SEM">Dentro de la semana</option>
+                    <option value="URG">Urgente (24-48hs)</option>              
+                </select>
 
-            <label for="id-descrip">Descripción de la consulta</label>
-            <textarea name="descripcion" id="id-descrip"></textarea>
+                <label for="id-descrip">Descripción de la consulta</label>
+                <textarea name="descripcion" id="id-descrip"></textarea>
 
-            <!-- Botón -->                        
-             <button type="submit">
-                Enviar
-             </button>
+                <div>
+                    <!-- Botón -->                        
+                    <button type="submit">
+                        Enviar
+                    </button>
+                </div>
         </form>
+        </div>
         <h2>Donde Encontrarme</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.584789247188!2d-64.18168492411644!3d-31.425563974257592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a29115cfcf0f%3A0xe548e61630db3a2c!2sSan%20Lorenzo%20600%2C%20X5000%20AZL%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1788734438845!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         
     </main>
-    <footer>
+    <footer class="pie-principal">
         <ul>
             <li>
                 <a href="https:/instagram.com/@MarianaSosa_ok" target="_blank">
