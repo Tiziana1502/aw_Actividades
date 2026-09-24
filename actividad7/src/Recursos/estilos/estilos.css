@@ -1,0 +1,196 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+*/
+html {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2e2e2e;
+    background-color: #fdfbf7;
+}
+
+h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2rem;
+    color: #35524a;
+    margin-bottom: 0.75rem;
+}
+
+h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.4rem;
+    color: #35524a;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.encabezado-sitio {
+    position: sticky;
+    background-color: #4c7a5a;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.encabezado-sitio a img {
+    width: 150px;
+}
+.contenido-principal {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.pie-pagina {
+    background-color: #35524a;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+.encabezado-sitio nav a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.encabezado-sitio nav a:hover {
+    text-decoration: underline;
+}
+
+.contenido-principal h1 + p {
+    font-style: italic;
+    color: #555555;
+}
+
+.contenido-principal ul li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.pie-pagina p {
+    font-size: 0.9rem;
+}
+
+.contenido-principal .grilla-secciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0 2.5rem;
+    margin-top: 0.5rem;
+}
+ 
+.contenido-principal .grilla-secciones h2 {
+    margin-top: 0;
+}
+
+.contenido-principal .contenedor-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+ 
+.contenido-principal .contenedor-form form label {
+    margin-top: 0.75rem;
+    font-weight: bold;
+    color: #35524a;
+}
+ 
+.contenido-principal .contenedor-form form input,
+.contenido-principal .contenedor-form form select,
+.contenido-principal .contenedor-form form textarea {
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #ffffff;
+}
+ 
+.contenido-principal .contenedor-form form textarea {
+    resize: vertical;
+}
+ 
+.contenido-principal .contenedor-form form input:focus,
+.contenido-principal .contenedor-form form select:focus,
+.contenido-principal .contenedor-form form textarea:focus {
+    outline: 2px solid #4c7a5a;
+    border-color: #4c7a5a;
+}
+
+.contenido-principal .contenedor-form button {  
+    margin-top: 1rem;
+    align-self: flex-start;
+    background-color: #4c7a5a;
+    color: #ffffff;
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contenido-principal .contenedor-form button:hover{
+    background-color: #35524a;
+}
+
+.boton-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4c7a5a;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.2s ease;
+}
+ 
+.boton-flotante:hover {
+    background-color: #35524a;
+}
+ 
+.boton-flotante svg {
+    width: 28px;
+    height: 28px;
+    fill: #ffffff;
+}
