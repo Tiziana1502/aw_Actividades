@@ -11,8 +11,8 @@
 
 <body>
     <!-- Se agrego header y footter porque  le faltaba el marcado semantico-->
+    <!-- Elimine el div porque al envolver el nav, logo y span no se aplicaba el justify-content: space-between -->
     <header class="encabezado-principal">
-        <div>
             <a href="./index.html" aria-label="Ir al inicio">
                 <img src="./recursos/imagenes/logo-rs.svg" alt="logo retiro sustentable con una montaña" width="200px">
             </a>
@@ -24,8 +24,7 @@
             <a href="./reservas.html">
                 Reservas
             </a>            
-        </nav>
-    </div>
+        </nav>    
     </header>
     <main class="contenido-principal">
         <h1>Catálogo de Cabañas</h1>
@@ -37,42 +36,55 @@
             <article>
                 <h2>Cabaña 1</h2>
                 <img src="./recursos/imagenes/modelo1.webp" alt="Cabaña de dos pisos en madera con balcón y vista a las sierras, iluminada al atardecer">
-                <p>Cabaña de dos plantas con amplios
-                    ventanales, balcón con vista a la montaña y deck exterior. Ideal para
-                    quienes buscan mayor espacio y privacidad rodeados de naturaleza.</p>
-                <p>Precio: $52.000 por día</p>
+                <ul>
+                    <li>Cabaña de dos plantas con amplios ventanales, balcón con vista a la montaña y deck exterior.</li>
+                    <li>Ideal para quienes buscan mayor espacio y privacidad rodeados de naturaleza.</li>
+                    <li>Precio: $52.000 por día</li>
+                </ul>
                 <a href="./reservas.html">
                     Reservar
                 </a>
             </article>
+
            <article>
                  <h2>Cabaña 2</h2>
-                <img src="./recursos/imagenes/modelo2.webp" alt="">
-                <p>Descripción.</p>
+                <img src="./recursos/imagenes/modelo2.webp" alt="Cabaña de madera de dos pisos rodeada de pinos, con balcón y galería techada">
+                <ul>
+                    <li>Cabaña de una planta con diseño moderno y acogedor, rodeada de vegetación.</li>
+                    <li>Perfecta para desconectar en un entorno silencioso y arbolado</li>
+                    <li>Precio: $48.000 por día</li>    
+                </ul>
                 <a href="./reservas.html">
                     Reservar
                 </a>
            </article>
-           
-               
-            
-           
+
+           <article>
                 <h2>Cabaña 3</h2>
-                <img src="./recursos/imagenes/modelo3.webp" alt="">
-                <p>Descripción de la Cabaña .</p>
+                <img src="./recursos/imagenes/modelo3.webp" alt="Cabaña de madera elevada sobre pilotes con deck y barandas, al pie del cerro">
+                <ul>
+                    <li>Cabaña elevada sobre pilotes de madera, con deck perimetral y grandes ventanales que se abren al paisaje serrano.</li>
+                    <li>Perfecta para parejas o familias pequeñas que buscan tranquilidad y confort.</li>
+                    <li>Precio: $42.000 por día</li>
+                </ul>
                 <a href="./reservas.html">
                     Reservar
                 </a>
-         
-            <div>
+            </article>
+
+            <article>
                 <h2>Cabaña 4</h2>
-                <img src="./recursos/imagenes/modelo4.webp" alt="">
-                <p>Descripción de la Cabaña .</p>
+                <img src="./recursos/imagenes/modelo4.webp" alt="Cabaña de madera de un piso con galería, entre las sierras y cielo despejado">
+                <ul>
+                    <li>Cabaña de un piso con galería cubierta y vista despejada a las sierras de Traslasierras.</li>
+                    <li>Ideal para quienes buscan un refugio tranquilo y confortable en medio del bosque.</li>
+                    <li>Precio: $40.000 por día</li>    
+                </ul>
                 <a href="./reservas.html">
                     Reservar
                 </a>
             </div>
-        </div>
+            </article>
     </main>
     <footer class="pie-principal">
         <div>

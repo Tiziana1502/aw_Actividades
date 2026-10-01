@@ -14,17 +14,18 @@ a {
 }
 html {
     height: 100%;
+    font-family: 'Sora', sans-serif;
 }
 
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: 'Sora', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     color: #2e2e2e;
-    background-color: #e6ffe3;
+    background-color: #b0d4ad;
 }
 
 .encabezado-principal{
@@ -38,10 +39,15 @@ body {
 
 .encabezado-principal .vinculos a{
     color: #0f3d00;
+    font-family: 'Sora', sans-serif;
+    font-size: 16px;
+    /*esto es para que la fuente del menu se muestre en negrita para una mejor visualización*/
+    font-weight: bold
 }
 
 .contenido-principal{
-    height: 1500px;
+    background-color: #b0d4ad;
+  
 }
 .contenido-principal .parrafo {
     position: absolute;
@@ -70,5 +76,5 @@ body {
 }
 
 .pie-principal{
-     background-color: #b0d4ad;
+    background-color: #fdfbf7;
 }
